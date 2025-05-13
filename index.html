@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Interactive Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1 class="title">Interactive Preferences Demo</h1>
+        
+        <div class="animation-container">
+            <div class="animated-box" id="animatedBox" role="region" aria-live="polite">
+                Click Me!
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn" id="toggleAnimation" aria-label="Toggle animation">
+                Toggle Animation
+            </button>
+            <button class="btn" id="changeColor" aria-label="Change box color">
+                Change Color
+            </button>
+        </div>
+
+        <fieldset class="theme-selector">
+            <legend>Choose Theme</legend>
+            <div class="theme-options">
+                <button class="theme-btn" data-theme="light" aria-label="Light theme"></button>
+                <button class="theme-btn" data-theme="dark" aria-label="Dark theme"></button>
+                <button class="theme-btn" data-theme="pink" aria-label="Pink theme"></button>
+                <button class="theme-btn" data-theme="green" aria-label="Green theme"></button>
+            </div>
+        </fieldset>
+
+        <section class="preferences" aria-labelledby="preferences-heading">
+            <h3 id="preferences-heading">Your Preferences</h3>
+            <div class="preferences-display" id="preferencesDisplay" role="status"></div>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
